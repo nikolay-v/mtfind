@@ -1,8 +1,13 @@
 cmake_minimum_required(VERSION 3.0)
 
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
 project(mtfind-project VERSION 0.1 LANGUAGES C CXX)
 
-aux_source_directory(Source srcfiles)
+file(GLOB srcfiles
+    Headers/*.h
+    Source/*.cpp
+)
 
 add_executable(mtfind ${srcfiles})
 
