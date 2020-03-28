@@ -2,7 +2,7 @@
 
 static const char ANY_SIGN = '?';
 
-PResult CSubStringSearch::Search(std::string& pData, std::string& pMask)
+PResult CSubStringSearch::Search(const std::string& pData, const std::string& pMask)
 {
   auto result = std::make_shared<TResult>();
 

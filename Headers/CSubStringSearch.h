@@ -6,5 +6,5 @@ class CSubStringSearch : public ISubStringSearch
 {
 public:
 
-  PResult Search(std::string& pData, std::string& pMask) override;
+  PResult Search(const std::string& pData, const std::string& pMask) override;
 };

@@ -1,7 +1,6 @@
 #include <array>
 #include <iostream>
 
-#include "CFakeSupplier.h"
 #include "CStringProcessor.h"
 #include "CStringStorage.h"
 #include "CSubStringSearch.h"
