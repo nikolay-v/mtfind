@@ -16,7 +16,7 @@ public:
 		E_END_OF_DATA
 	};
 
-	using TDataId = uint32_t;
+	using TDataId = size_t;
 	struct TDataInfo
 	{
 		TDataInfo(EResult result, TDataId id) : m_result(result), m_id(id) {}

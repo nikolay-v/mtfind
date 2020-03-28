@@ -47,7 +47,7 @@ int main(int argc, char* argv[])
 
   auto seachResults = pStorage->GetResults();
 
-  uint32_t count = 0;
+  size_t count = 0;
   for (auto record : seachResults)
   {
     if (record.second.get() == nullptr || record.second->m_results.empty())

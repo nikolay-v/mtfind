@@ -12,11 +12,11 @@ struct CSupplierFromFile::Impl
   std::pair<PRawData, EResult> GetData();
 
 private:
-  uint32_t m_bufLen = 4096;
+  size_t m_bufLen = 4096;
   std::ifstream fin;
   std::unique_ptr<char[]> m_pBuf;
-  uint32_t m_line = 1;
-  uint32_t m_pos = 0;
+  size_t m_line = 1;
+  size_t m_pos = 0;
   size_t m_repeatLen;
 };
 
