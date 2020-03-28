@@ -7,5 +7,5 @@ class ISubStringSearch
 public:
   virtual ~ISubStringSearch(){}
 
-  virtual PResult Search(std::string& pData, std::string& pMask) = 0;
+  virtual PResult Search(const std::string& pData, const std::string& pMask) = 0;
 };
